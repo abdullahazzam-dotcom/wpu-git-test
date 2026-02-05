@@ -1,11 +1,7 @@
 pipeline {
-    agent {
-      node {
-        label "linux && java17
-     {
-{            
+    agent any
     stages {
-        stage("Build") {
+    stage("Build") {
             steps {
                 echo "Build....."
   echo "Build Success"
